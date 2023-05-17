@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signupactivity">
+
+    <ImageView
+        android:id="@+id/signupBackGround"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/signuppage" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="@+id/signupBackGround"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/signupBackGround"
+        app:layout_constraintTop_toTopOf="@+id/signupBackGround"
+        app:layout_constraintVertical_bias="0.84">
+
+        <EditText
+            android:id="@+id/username_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounder_corner"
+            android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+            android:ems="10"
+            android:hint="Enter Full Name"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColor="@color/purple_700"
+            android:textColorHint="@color/purple_700"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/email_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounder_corner"
+            android:drawableLeft="@drawable/ic_baseline_mail_outline_24"
+            android:ems="10"
+            android:hint="Enter Email-ID"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColor="@color/purple_700"
+            android:textColorHint="@color/purple_700"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/phone_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounder_corner"
+            android:drawableLeft="@drawable/ic_outline_smartphone_24"
+            android:ems="10"
+            android:hint="Enter Phone Number"
+            android:inputType="phone"
+            android:padding="15dp"
+            android:textColor="@color/purple_700"
+            android:textColorHint="@color/purple_700"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/password_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounder_corner"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/purple_700"
+            android:textColorHint="@color/purple_700"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/password_again_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounder_corner"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:ems="10"
+            android:hint="Re-enter Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/purple_700"
+            android:textColorHint="@color/purple_700"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/sign_up_button"
+            android:layout_width="150dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/button2" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/signupBackGround"
+        app:layout_constraintEnd_toEndOf="@+id/signupBackGround"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/signupBackGround"
+        app:layout_constraintTop_toTopOf="@+id/signupBackGround"
+        app:layout_constraintVertical_bias="0.912">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? "
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/login_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/purple_700"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
